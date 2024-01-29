@@ -1,0 +1,123 @@
+.start-body {
+    background-image: url("https://api.dujin.org/bing/1920.php");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.backdrop {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, blur(5px));
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.backdrop-content {
+    filter: none;
+    position: fixed;
+    top: 0;
+    left: 360px;
+    color: #ffffffff;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.home {
+    background-color: #00000000;
+}
+
+.home a {
+    display: inline-block;
+    background-color: #00000000;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.home h3 {
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.home h4 {
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    opacity: 0;
+    animation: popupAnimation 0.3s forwards;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .popup.hide {
+    animation: closeAnimation 0.3s forwards;
+  }
+
+  .popup a {
+    display: inline-block;
+    background-color: #007AFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .popup a:hover {
+    background-color: #1478F0;
+  }
+
+
+  @keyframes popupAnimation {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -100%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @keyframes closeAnimation {
+    from {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      opacity: 0;
+      transform: translate(-50%, -100%);
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
