@@ -5,6 +5,18 @@
         <link rel="icon" href="../images/logo.png" />
         <script src="../js/js.js"></script>
         <link rel="stylesheet" href="../css/style.css"/>
+        <script type="text/javascript">
+            var system ={};  
+               var p = navigator.platform;       
+               system.win = p.indexOf("Win") == 0;  
+               system.mac = p.indexOf("Mac") == 0;  
+               system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
+               if(system.win||system.mac||system.xll){//如果是电脑跳转到
+                       window.location.href="#";
+               }else{
+                      alert("推荐使用电脑端访问网页！");
+               }
+        </script>
     </head>
     <body class="home-body">
         <div>
