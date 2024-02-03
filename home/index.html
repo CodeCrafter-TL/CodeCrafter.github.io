@@ -11,7 +11,7 @@
                system.win = p.indexOf("Win") == 0;  
                system.mac = p.indexOf("Mac") == 0;  
                system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
-               if(system.win||system.mac||system.xll){//如果是电脑跳转到
+               if(system.win||system.mac||system.xll){
                        window.location.href="#";
                }else{
                       alert("推荐使用电脑端访问网页！");
@@ -19,18 +19,28 @@
         </script>
     </head>
     <body class="home-body">
-        <div>
+        <img src="../images/homebg.png" style="background-size: cover; position: fixed; top: 0; z-index: 0; left: 0"/>
+        <div style="margin: 0; padding: 0;">
             <div class="backdrop">
-                <div class="backdrop-content">
-                    <h3 id="title">CodeCrafter</h3>
-                </div>
+                <h3 id="title" class="backdrop-content">CodeCrafter</h3>
             </div>
             <div class="vp">
                 <img src="../images/pyvplogo.png" width="320" height="320" />
                 <h3>Python Visual Programmer</h3>
                 <h4>基于 Python 语言中的 tkinter GUI 工具的可视化编程软件</h4>
-                <a href="https://github.com/xiaokang2022/visual-programmer">View in Github</a>
+                <a href="https://github.com/xiaokang2022/visual-programmer" class="a-one">View in Github</a>
+                <a href="https://hub.nuaa.cf/xiaokang2022/visual-programmer" class="a-next">hub nuaa cf (镜像源) </a>
             </div>
+        </div>
+        <div id="join-us-div" class="join-us">
+            <h2>你也想加入我们？（满足其一即可）</h2>
+            <div><h4>1 有HTML CSS JS基础</h5></div>
+            <div><h4>2 有任何一种编程语言基础 最好常见</h4></div>
+            <div><h4>3 有GUI开发基础</h5></div>
+            <div><h4>4 （最好）有汇编、C语言开发基础</h5></div>
+            <br>
+            <h4>如果满足其上任意一条，请发送邮件至1825456084@qq.com；并写出自己满足哪一条</h4>
+            <a href="mailto:1825456084@qq.com">点我发送邮件</a>
         </div>
     </body>
 </html>

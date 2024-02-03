@@ -13,23 +13,41 @@
 }
 
 .home-body {
-  background-image: url("../images/homebg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
-.backdrop {
+.container {
+  height: 100vh
+}
+
+.backdrop-home {
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, blur(5px));
     width: 100%;
-    height: 7%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    height: 7%;
     margin: 0;
     align-items: center;
+}
+
+.backdrop {
+  backdrop-filter: blur(7px);
+  background-color: rgba(255, 255, 255, blur(7px));
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 7%;
+  margin: 0;
+  box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+  z-index: 1;
 }
 
 .backdrop-content {
@@ -39,6 +57,7 @@
     left: 360px;
     color: #ffffffff;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    z-index: 1;
 }
 
 .home {
@@ -88,16 +107,20 @@
 
 .join-us {
   text-align: center;
-  width: 100%;
-  left: 0;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  top: 100%;
   background-color: #fff;
   color: black;
   align-items: center;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
 .join-us a {
   display: inline-block;
-  background-color: aqua;
+  background-color: #00f;
   color: #fff;
   border: 2px solid white;
   border-radius: 10px;
@@ -115,11 +138,12 @@
   height: 40px;
   text-align: center;
   align-items: center;
+  margin: 6vh;
+  font: "微软雅黑"
 }
 
 .vp {
-  /* background-image: url("../images/homebg.png"); */
-  position: fixed;
+  position: absolute;
   top: 7%;
   left: 0;
   width: 100%;
@@ -127,9 +151,9 @@
 }
 
 .vp h3 {
-  position: fixed;
-  top: 340px;
-  left: 1020px;
+  position: absolute;
+  top: 260px;
+  left: 980px;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   font-size: 36px;
@@ -137,9 +161,9 @@
 }
 
 .vp h4 {
-  position: fixed;
-  top: 420px;
-  left: 1030px;
+  position: absolute;
+  top: 340px;
+  left: 990px;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
   font-size: 24px;
@@ -147,14 +171,14 @@
 }
 
 .vp img {
-  position: fixed;
-  top: 300px;
-  left: 320px;
+  position: absolute;
+  top: 220px;
+  left: 280px;
   font-size: 24px;
   animation: fadeIn 1.25s ease-in-out;
 }
 
-.vp a {
+.a-one {
   display: inline-block;
   background-color: #0000ff;
   color: #fff;
@@ -164,12 +188,27 @@
   font-size: 18px;
   margin-top: 20px;
   text-decoration: none;
-  position: fixed;
-  top: 510px;
-  left: 1300px;
+  position: absolute;
+  top: 430px;
+  left: 1260px;
   animation: fadeIn 1.7s ease-in-out;
 }
 
+.a-next {
+  display: inline-block;
+  background-color: #0000ff;
+  color: #fff;
+  border: 2px solid #0000ff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 430px;
+  left: 1460px;
+  animation: fadeIn 1.9s ease-in-out;
+}
 
 @keyframes fadeIn {
   from {
