@@ -11,7 +11,7 @@
                system.win = p.indexOf("Win") == 0;  
                system.mac = p.indexOf("Mac") == 0;  
                system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
-               if(system.win||system.mac||system.xll){
+               if(system.win||system.mac||system.x11){
                        window.location.href="#";
                }else{
                       alert("推荐使用电脑端访问网页！");
@@ -25,7 +25,7 @@
                 <h3 id="title" class="backdrop-content">CodeCrafter</h3>
             </div>
             <div class="vp">
-                <img src="../images/pyvplogo.png" width="320" height="320" />
+                <img src="../images/pyvplogo-new.png" width="320" height="320" />
                 <h3>Python Visual Programmer</h3>
                 <h4>基于 Python 语言中的 tkinter GUI 工具的可视化编程软件</h4>
                 <a href="https://github.com/xiaokang2022/visual-programmer" class="a-one">View in Github</a>
@@ -42,5 +42,55 @@
             <h4>如果满足其上任意一条，请发送邮件至1825456084@qq.com；并写出自己满足哪一条</h4>
             <a href="mailto:1825456084@qq.com">点我发送邮件</a>
         </div>
+        <div class="githubs">
+            <div>
+                <img src="../images/tl.jpg" class="profile-img" />
+                <h3 style="flex-grow: 1;">CodeCrafter-TL</h3>
+            </div>
+            <div>
+                <img src="../images/totowang.png" class="profile-img" />
+                <h3 style="flex-grow: 1;">真_人工智障</h3>
+            </div>
+            <div>
+                <img src="../images/ntf.png" class="profile-img" />
+                <h3 style="flex-grow: 1;">NTF404</h3>
+            </div>
+            <div>
+                <img src="../images/gaoxuan.jpg" class="profile-img" />
+                <h3 style="flex-grow: 1;">Gaoxuan</h3>
+            </div>
+            <div>
+                <img src="../images/python-lhy.png" class="profile-img" />
+                <h3 style="flex-grow: 1;">Python之星-刘皓月</h3>
+            </div>
+            <div>
+                <img src="../images/cxt.png" class="profile-img" />
+                <h3 style="flex-grow: 1;">ChenXiaoThi</h3>
+            </div>
+            <p style="position: absolute; top: 90%;   text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; color: white;">*由于缺少资料，这里并不完全</p>
+        </div>
+        <div class="copyright">
+            <div>
+                <h3>Copyright &copy;2023~2024 CodeCrafter Studio.</h3>
+            </div>
+        </div>
     </body>
+    <script>    
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1; // 直接设置透明度为1
+                    }
+                });
+            }, {threshold: 0.35}); // 当元素超过35%可见时触发
+    
+            // 监听 .join-us .githubs 元素
+            const joinUsElement = document.querySelector('.join-us');
+            observer.observe(joinUsElement);
+
+            const GithubsElement = document.querySelector('.githubs');
+            observer.observe(GithubsElement);
+        });
+    </script>
 </html>

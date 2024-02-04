@@ -9,7 +9,6 @@
   height: 100vh;
   color: #fff;
   text-align: center;
-  overflow: scroll;
 }
 
 .home-body {
@@ -35,6 +34,7 @@
     height: 7%;
     margin: 0;
     align-items: center;
+    box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
 .backdrop {
@@ -47,7 +47,7 @@
   height: 7%;
   margin: 0;
   box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
-  z-index: 1;
+  z-index: 3;
 }
 
 .backdrop-content {
@@ -57,7 +57,7 @@
     left: 360px;
     color: #ffffffff;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
-    z-index: 1;
+    z-index: 3;
 }
 
 .home {
@@ -116,6 +116,8 @@
   align-items: center;
   border-radius: 20px;
   box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .join-us a {
@@ -126,7 +128,8 @@
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   text-decoration: none;
 }
 
@@ -176,6 +179,7 @@
   left: 280px;
   font-size: 24px;
   animation: fadeIn 1.25s ease-in-out;
+  z-index: 2;
 }
 
 .a-one {
@@ -192,6 +196,7 @@
   top: 430px;
   left: 1260px;
   animation: fadeIn 1.7s ease-in-out;
+  box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
 .a-next {
@@ -208,6 +213,7 @@
   top: 430px;
   left: 1460px;
   animation: fadeIn 1.9s ease-in-out;
+  box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
 @keyframes fadeIn {
@@ -217,4 +223,66 @@
   to {
     opacity: 1;
   }
+}
+
+.fadeInAnimation {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.githubs {
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  height: 50%;
+  color: #000;
+  background-color: #fff;
+  position: absolute;
+  top: 160%;
+  left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.githubs div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 200px;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.githubs img.profile-img {
+  flex-grow: 1;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.githubs img.profile-img:hover {
+  transform: translateY(-10px);
+}
+
+.copyright {
+  width: 100%;
+  height: 9%;
+  position: absolute;
+  top: 230%;
+  left: 0;
+  background-color: rgba(0, 0, 0, blur(7px));
+  color: #fff;
+  align-items: center;
+  backdrop-filter: blur(7px);
+  box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+  text-align: center;
+  padding-top: 10px;
 }
