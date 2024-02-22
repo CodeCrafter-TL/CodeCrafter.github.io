@@ -1,0 +1,520 @@
+.home-body {
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    background-attachment: scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -webkit-font-smooth: always;
+    font-family: "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.home-body img {
+    size: cover;
+}
+
+.backdrop-home {
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 7%;
+    margin: 0;
+    align-items: center;
+    box-shadow: 1px 1px 1px #707070, 0 0 0.5em #707070, 0 0 0.1em #707070;
+}
+
+.backdrop {
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7%;
+    margin: 0;
+    box-shadow: 1px 1px 1px #707070, 0 0 0.5em #707070, 0 0 0.1em #707070;
+    z-index: 3;
+}
+
+.backdrop-content {
+    filter: none;
+    position: fixed;
+    top: 0;
+    left: 360px;
+    color: #ffffffff;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    z-index: 3;
+}
+
+.cctext {
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    text-align: center;
+}
+
+.studio-profile {
+    width: 100%;
+    height: 93%;
+    position: fixed;
+    top: 7%;
+    left: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.join-us {
+    text-align: center;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 210%;
+    background-color: #fff;
+    color: black;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.join-us h4,
+h2 {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.join-us a {
+    display: inline-block;
+    background-color: #00f;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.vp {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.vp h3 {
+    position: absolute;
+    top: 28%;
+    left: 51.57%;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    font-size: 36px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.vp h4 {
+    position: absolute;
+    top: 36.7%;
+    left: 52.1%;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    font-size: 24px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.vp img {
+    position: absolute;
+    top: 23.78%;
+    left: 14.7368%;
+    font-size: 24px;
+    animation: fadeIn 1.25s ease-in-out;
+    z-index: 2;
+}
+
+.t-ttk {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.t-ttk h3 {
+    position: absolute;
+    top: 28%;
+    left: 51.57%;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    font-size: 36px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.t-ttk h4 {
+    position: absolute;
+    top: 36.7%;
+    left: 52.1%;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.t-ttk img {
+    position: absolute;
+    top: 23.78%;
+    left: 14.7368%;
+    font-size: 24px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.a-one {
+    display: inline-block;
+    background-color: #0000ff;
+    color: #fff;
+    border: 2px solid #0000ff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: none;
+    position: absolute;
+    top: 46%;
+    left: 66%;
+    animation: fadeIn 1.7s ease-in-out;
+    box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.a-next {
+    display: inline-block;
+    background-color: #0000ff;
+    color: #fff;
+    border: 2px solid #0000ff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: none;
+    position: absolute;
+    top: 46%;
+    left: 76.8%;
+    animation: fadeIn 1.9s ease-in-out;
+    box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInAnimation {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.githubs {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    height: 50%;
+    color: #000;
+    background-color: #fff;
+    position: absolute;
+    top: 270%;
+    left: 1.5789%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.githubs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    width: 13%;
+    /* text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; */
+}
+
+.githubs img.profile-img {
+    flex-grow: 1;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    width: 75%;
+    height: 31%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.githubs img.profile-img:hover {
+    transform: translateY(-10px);
+}
+
+.githubs h3 {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.copyright {
+    width: 100%;
+    height: 9%;
+    position: absolute;
+    top: 430%;
+    left: 0;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 1px 1px 2px #707070, 0 0 1em #707070, 0 0 0.2em #707070;
+    text-align: center;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.4)
+}
+
+.totowang-hhh {
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    height: 80%;
+    color: #000;
+    position: absolute;
+    top: 340%;
+    left: 1.5789%;
+    align-items: center;
+    z-index: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.totowang-hhh .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 1.3%;
+    right: 25%;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+    padding-right: 10px;
+    background-color: #fff;
+}
+
+@keyframes scaleAnimationStart {
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes scaleAnimationBack {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes BoxShadowAnimation {
+    from {
+        box-shadow: 1px 1px 2px black, 0 0 0.5em black, 0 0 0.1em black;
+    }
+
+    to {
+        box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    }
+}
+
+.totowang-hhh .profile:hover {
+    animation: scaleAnimationStart 0.4s ease-in-out, BoxShadowAnimation 0.4s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 2px black, 0 0 0em black, 0 0 0em black;
+    animation-fill-mode: forwards;
+}
+
+.totowang-hhh .profile:not(:hover) {
+    animation: scaleAnimationBack 0.4s ease-in-out, BoxShadowAnimation 0.4s ease-in-out;
+    transform: scale(1.0);
+    animation-fill-mode: forwards;
+}
+
+.totowang-hhh .profile img {
+    float: left;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.totowang-hhh .profile h3 {
+    float: right;
+}
+
+#qikengla {
+    color: #000;
+    text-decoration: none;
+    position: absolute;
+}
+
+#many-a {
+    display: inline-block;
+    color: #00f;
+    font-size: 18px;
+    text-decoration: none;
+    position: absolute;
+}
+
+#many-a:hover {
+    color: #00deff;
+    text-decoration: none;
+}
+
+#tttk {
+    color: #000;
+    text-decoration: none;
+    position: absolute;
+}
+
+.xiaokang2022 {
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    height: 80%;
+    color: #000;
+    position: absolute;
+    top: 340%;
+    right: 1.5789%;
+    align-items: center;
+    z-index: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.xiaokang2022 .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 1.3%;
+    right: 25%;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+    padding-right: 10px;
+    background-color: #fff;
+}
+
+@keyframes scaleAnimationStart {
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes scaleAnimationBack {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes BoxShadowAnimation {
+    from {
+        box-shadow: 1px 1px 2px black, 0 0 0.5em black, 0 0 0.1em black;
+    }
+
+    to {
+        box-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    }
+}
+
+.xiaokang2022 .profile:hover {
+    animation: scaleAnimationStart 0.4s ease-in-out, BoxShadowAnimation 0.4s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 2px black, 0 0 0em black, 0 0 0em black;
+    animation-fill-mode: forwards;
+}
+
+.xiaokang2022 .profile:not(:hover) {
+    animation: scaleAnimationBack 0.4s ease-in-out, BoxShadowAnimation 0.4s ease-in-out;
+    transform: scale(1.0);
+    animation-fill-mode: forwards;
+}
+
+.xiaokang2022 .profile img {
+    float: left;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.xiaokang2022 .profile h3 {
+    float: right;
+}
+
+#qikengla {
+    color: #000;
+    text-decoration: none;
+    position: absolute;
+}
+
+#many-a {
+    display: inline-block;
+    color: #00f;
+    font-size: 18px;
+    text-decoration: none;
+    position: absolute;
+    box-shadow: 1px 1px 10px #707070, 0 0 15em #707070, 0 0 3em #707070;
+}
+
+#tttk {
+    color: #000;
+    text-decoration: none;
+    position: absolute;
+}
+
+.bg {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ccc;
+    height: 230%;
+    box-shadow: 1px 1px 10px #707070, 0 0 15em #707070, 0 0 3em #707070;
+}

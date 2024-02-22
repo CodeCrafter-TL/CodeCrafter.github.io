@@ -1,96 +1,181 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>CodeCrafter - 主页</title>
-        <link rel="icon" href="../images/logo.png" />
-        <script src="../js/js.js"></script>
-        <link rel="stylesheet" href="../css/style.css"/>
-        <script type="text/javascript">
-            var system ={};  
-               var p = navigator.platform;       
-               system.win = p.indexOf("Win") == 0;  
-               system.mac = p.indexOf("Mac") == 0;  
-               system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
-               if(system.win||system.mac||system.x11){
-                       window.location.href="#";
-               }else{
-                      alert("推荐使用电脑端访问网页！");
-               }
-        </script>
-    </head>
-    <body class="home-body">
-        <img src="../images/homebg.png" style="background-size: cover; position: fixed; top: 0; z-index: 0; left: 0"/>
-        <div style="margin: 0; padding: 0;">
-            <div class="backdrop">
-                <h3 id="title" class="backdrop-content">CodeCrafter</h3>
-            </div>
-            <div class="vp">
-                <img src="../images/pyvplogo-new.png" width="320" height="320" />
-                <h3>Python Visual Programmer</h3>
-                <h4>基于 Python 语言中的 tkinter GUI 工具的可视化编程软件</h4>
-                <a href="https://github.com/xiaokang2022/visual-programmer" class="a-one">View in Github</a>
-                <a href="https://hub.nuaa.cf/xiaokang2022/visual-programmer" class="a-next">hub nuaa cf (镜像源) </a>
-            </div>
-        </div>
-        <div id="join-us-div" class="join-us">
-            <h2>你也想加入我们？（满足其一即可）</h2>
-            <div><h4>1 有HTML CSS JS基础</h5></div>
-            <div><h4>2 有任何一种编程语言基础 最好常见</h4></div>
-            <div><h4>3 有GUI开发基础</h5></div>
-            <div><h4>4 （最好）有汇编、C语言开发基础</h5></div>
-            <br>
-            <h4>如果满足其上任意一条，请发送邮件至1825456084@qq.com；并写出自己满足哪一条</h4>
-            <a href="mailto:1825456084@qq.com">点我发送邮件</a>
-        </div>
-        <div class="githubs">
-            <div>
-                <img src="../images/tl.jpg" class="profile-img" />
-                <h3 style="flex-grow: 1;">CodeCrafter-TL</h3>
-            </div>
-            <div>
-                <img src="../images/totowang.png" class="profile-img" />
-                <h3 style="flex-grow: 1;">真_人工智障</h3>
-            </div>
-            <div>
-                <img src="../images/ntf.png" class="profile-img" />
-                <h3 style="flex-grow: 1;">NTF404</h3>
-            </div>
-            <div>
-                <img src="../images/gaoxuan.jpg" class="profile-img" />
-                <h3 style="flex-grow: 1;">Gaoxuan</h3>
-            </div>
-            <div>
-                <img src="../images/python-lhy.png" class="profile-img" />
-                <h3 style="flex-grow: 1;">Python之星-刘皓月</h3>
-            </div>
-            <div>
-                <img src="../images/cxt.png" class="profile-img" />
-                <h3 style="flex-grow: 1;">ChenXiaoThi</h3>
-            </div>
-            <p style="position: absolute; top: 90%;   text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; color: white;">*由于缺少资料，这里并不完全</p>
-        </div>
-        <div class="copyright">
-            <div>
-                <h3>Copyright &copy;2023~2024 CodeCrafter Studio.</h3>
-            </div>
-        </div>
-    </body>
-    <script>    
-        document.addEventListener("DOMContentLoaded", function() {
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = 1; // 直接设置透明度为1
-                    }
-                });
-            }, {threshold: 0.35}); // 当元素超过35%可见时触发
-    
-            // 监听 .join-us .githubs 元素
-            const joinUsElement = document.querySelector('.join-us');
-            observer.observe(joinUsElement);
 
-            const GithubsElement = document.querySelector('.githubs');
-            observer.observe(GithubsElement);
-        });
+<head>
+    <title>CodeCrafter - 主页</title>
+    <link rel="icon" href="../images/logo.png" />
+    <script src="../js/js.js"></script>
+    <link rel="stylesheet" href="../css/main-style.css" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script type="text/javascript">
+        var system = {};
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0
+        system.mac = p.indexOf("Mac") == 0
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0)
+        if (system.win || system.mac || system.x11) {
+            window.location.href = "#"
+        } else {
+            window.alert("推荐使用电脑端访问! \n浏览器 1900x925 访问最佳")
+        }
+
     </script>
+</head>
+
+<body class="home-body">
+    <img src="../images/homebg.png"
+        style="position: fixed; top: 0; z-index: 0; left: 0;  background-size: cover; -webkit-background-size: cover; -o-background-size: cover;"
+        width=1920 height=1080 />
+    <div style="margin: 0; padding: 0;">
+        <div class="backdrop">
+            <h3 id="title" class="backdrop-content">CodeCrafter</h3>
+        </div>
+        <div class="vp">
+            <img src="../images/pyvplogo-new.png" width="16.8%" height="34.5%" />
+            <h3>Python Visual Programmer</h3>
+            <h4>基于 Python 语言中的 tkinter GUI 工具的可视化编程软件<br>底层基于 <a style="text-decoration: none; color: #fff;"
+                    href="https://github.com/xiaokang2022/tkintertools">tkintertools</a></h4>
+            <a href="https://github.com/xiaokang2022/visual-programmer" class="a-one">View in GitHub</a>
+        </div>
+        <div class="t-ttk">
+            <img src="../images/ezpip.png" width="16.8%" height="34.5%" />
+            <h3>Easy PyPI</h3>
+            <h4>Easy PyPI可以理解为pip.exe的图形化扩展 它的大部分功能仍基于pip.exe</h4>
+            <a href="https://github.com/TotoWang-hhh/ezpip" class="a-one">View in GitHub</a>
+        </div>
+    </div>
+    <div id="join-us-div" class="join-us">
+        <h2>你也想加入我们？（满足其一即可）</h2>
+        <div>
+            <h3>1 有HTML CSS JS基础</h3>
+        </div>
+        <div>
+            <h3>2 有任何一种编程语言基础 最好常见</h3>
+        </div>
+        <div>
+            <h3>3 有GUI开发基础</h3>
+        </div>
+        <div>
+            <h3>4 （最好）有汇编、C语言开发基础</h3>
+        </div>
+        <br>
+        <h2>如果满足其上任意一条，请发送邮件至1825456084@qq.com；并写出自己满足哪一条</h2>
+        <a href="mailto:1825456084@qq.com">点我发送邮件</a>
+    </div>
+    <div class="githubs">
+        <div>
+            <img src="../images/tl.jpg" class="profile-img" />
+            <h3 style="flex-grow: 1;">CodeCrafter-TL</h3>
+        </div>
+        <div>
+            <img src="../images/totowang.png" class="profile-img" />
+            <h3 style="flex-grow: 1;">真_人工智障</h3>
+        </div>
+        <div>
+            <img src="../images/ntf.png" class="profile-img" />
+            <h3 style="flex-grow: 1;">NTF404</h3>
+        </div>
+        <div>
+            <img src="../images/gaoxuan.jpg" class="profile-img" />
+            <h3 style="flex-grow: 1;">Gaoxuan</h3>
+        </div>
+        <div>
+            <img src="../images/python-lhy.png" class="profile-img" />
+            <h3 style="flex-grow: 1;">Python之星-刘皓月</h3>
+        </div>
+        <div>
+            <img src="../images/cxt.png" class="profile-img" />
+            <h3 style="flex-grow: 1;">ChenXiaoThi</h3>
+        </div>
+        <div>
+            <img src="../images/simonger.png" class="profile-img" />
+            <h3 style="flex-grow: 1;">事创造键啊</h3>
+        </div>
+        <p
+            style="position: absolute; top: 90%;   text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black; color: white;">
+            *由于缺少资料，这里并不完全</p>
+    </div>
+    <footer class="copyright">
+        <h3>Copyright &copy;2023~2024 CodeCrafter Studio.</h3>
+    </footer>
+    <div class="totowang-hhh">
+        <div class="profile">
+            <img src="../images/totowang.png" width="25.31%" height="25.31%" style="border-radius: 50%;" />
+            <h3>真_人工智障</h3>
+        </div>
+        <a href="http://116.198.35.73:10006" id="qikengla" style="top: 25%; left: 3%; font-size: 28px;">弃坑啦</a>
+        <h3 style="position: absolute; top: 30%; left: 3%">您可以在此完善甚至接手一些烂尾项目<br>这里的交易内容是抽象的，您用您的精力换取他人的灵感</h3>
+        <a href="https://github.com/totowang-hhh/tttk/" id="tttk"
+            style="top: 42.5%; left: 3%; font-size: 28px;">tttk</a>
+        <a style="position: absolute; top: 50%; left: 3%; font-size: 1.17em; text-decoration: none; color: black;"
+            href="https://totowang-hhh.github.io/tttk/">一个tkinter的增强库</a>
+        <a href="https://github.com/totowang-hhh/music_down" id="tttk"
+            style="top: 55%; left: 3%; font-size: 28px;">音乐地带</a>
+        <h3 style="position: absolute; top: 60%; left: 3%">
+            这个软件可以免费下载网易云上所有能在线听的音乐<br>
+            <h3 style="color: red; top: 65%; left: 2.7%; position: absolute;">（已停更）</h3>
+            <a href="http://rgzz.likesyou.org/?i=1" id="many-a"
+                style="margin-left: 5%;top: 85.3%; display: inline-block;background-color: #0000ff;color: #fff;border: 2px solid #0000ff;border-radius: 10px;padding: 10px 20px;font-size: 18px;margin-top: 20px;text-decoration: none;">我的官网</a>
+            <a href="https://www.cnblogs.com/TotoWang" id="many-a"
+                style="margin-left: 25%;top: 85.3%; display: inline-block;background-color: #0000ff;color: #fff;border: 2px solid #0000ff;border-radius: 10px;padding: 10px 20px;font-size: 18px;margin-top: 20px;text-decoration: none;">博客园</a>
+            <a href="https://space.bilibili.com/400855656" id="many-a"
+                style="margin-left: 45%;top: 85.3%; display: inline-block;background-color: #0000ff;color: #fff;border: 2px solid #0000ff;border-radius: 10px;padding: 10px 20px;font-size: 18px;margin-top: 20px;text-decoration: none;">BiliBili</a>
+            <a href="http://rgzz.likesyou.org/blog/" id="many-a"
+                style="margin-left: 65%;top: 85.3%; display: inline-block;background-color: #0000ff;color: #fff;border: 2px solid #0000ff;border-radius: 10px;padding: 10px 20px;font-size: 18px;margin-top: 20px;text-decoration: none;">语痴博客</a>
+            <a href="http://rgzz.likesyou.org/home/zero_start" id="many-a"
+                style="margin-left: 85%;top: 85.3%; display: inline-block;background-color: #0000ff;color: #fff;border: 2px solid #0000ff;border-radius: 10px;padding: 10px 20px;font-size: 18px;margin-top: 20px;text-decoration: none;">零启</a>
+    </div>
+    <div class="xiaokang2022">
+        <div class="profile">
+            <img src="../images/xiaokang.jpg" width="25.31%" height="25.31%" style="border-radius: 50%;" />
+            <h3>小康2022</h3>
+        </div>
+        <a href="http://github.com/xiaokang2022/tkintertools" id="qikengla"
+            style="top: 25%; left: 3%; font-size: 28px;">tkintertools</a>
+        <h3 style="position: absolute; top: 30%; left: 3%">tkinter的一个辅助开发模块</h3>
+        <a href="https://blog.csdn.net/weixin_62651706/category_11600888.html" id="tttk"
+            style="top: 42.5%; left: 3%; font-size: 28px;">开发秘籍: tkinter 桌面应用程序</a>
+        <a style="position: absolute; top: 50%; left: 3%; font-size: 1.17em; text-decoration: none; color: black;"
+            href="https://blog.csdn.net/weixin_62651706/category_11600888.html">点我跳转！</a>
+            <h3 style="color: red; top: 65%; left: 2.7%; position: absolute;"></h3>
+            <a href="http://github.com/xiaokang2022" id="many-a"
+                style="margin-left: 25%;top: 85.3%; display: inline-block;background-color: #0000ff;color: #fff;border: 2px solid #0000ff;border-radius: 10px;padding: 10px 20px;font-size: 18px;margin-top: 20px;text-decoration: none;">GitHub</a>
+            <a href="https://xiaokang2022.blog.csdn.net" id="many-a"
+                style="margin-left: 65%;top: 85.3%; display: inline-block;background-color: #0000ff;color: #fff;border: 2px solid #0000ff;border-radius: 10px;padding: 10px 20px;font-size: 18px;margin-top: 20px;text-decoration: none;">CSDN</a>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1; // 直接设置透明度为1
+                }
+            });
+        }, { threshold: 0.35 }); // 当元素超过35%可见时触发
+
+        // 监听 .join-us .githubs 元素
+        const joinUsElement = document.querySelector('.join-us');
+        observer.observe(joinUsElement);
+
+        const GithubsElement = document.querySelector('.githubs');
+        observer.observe(GithubsElement);
+
+        const ToTowangElement = document.querySelector('.totowang-hhh');
+        observer.observe(ToTowangElement);
+
+        const ezpip1Element = document.querySelector('.t-ttk h3');
+        observer.observe(ezpip1Element);
+        const ezpip2Element = document.querySelector('.t-ttk img');
+        observer.observe(ezpip2Element);
+        const ezpip3Element = document.querySelector('.t-ttk h4');
+        observer.observe(ezpip3Element);
+
+        const xiaokangElement = document.querySelector('.xiaokang2022');
+        observer.observe(xiaokangElement);
+    });
+</script>
+
+
 </html>
