@@ -1,1 +1,118 @@
-{"config":{"lang":["en"],"separator":"[\\s\\u200b\\-_,:!=\\[\\]()\"`/]+|\\.(?!\\d)|&[lg]t;|(?!\\b)(?=[A-Z][a-z])","pipeline":["stemmer"]},"docs":[{"location":"","title":"Profile - \u7b80\u4ecb","text":""},{"location":"#_1","title":"\u7528\u6237\u624b\u518c","text":""},{"location":"#mixed","title":"\u5982\u4f55\u4f7f\u7528 <code>Mixed</code> \uff1f","text":"<p>\u4f7f\u7528\u5982\u4e0b\u683c\u5f0f\u7684<code>cmd</code> <code>PowerShell</code>\u547d\u4ee4\uff1a</p> <p><pre><code>&lt;python | python3&gt; mixed.py &lt;&lt;filename&gt;.mixed&gt;\n</code></pre> \u4f60\u5c06\u5728<code>/dist/</code>\u4e0b\u770b\u5230\u4e00\u4e2a<code>&lt;filename&gt;.exe</code>\u7684\u53ef\u6267\u884c\u6587\u4ef6\u3002</p> <p>\u5982\u679c\u60f3\u770b\u5230\u6267\u884c\u6548\u679c\uff0c\u8bf7\u4f7f\u7528<code>cmd</code>\u6216<code>PowerShell</code>\u6253\u5f00\u6b64\u6587\u4ef6\u3002</p>"},{"location":"#_2","title":"\u793a\u4f8b","text":"<pre><code>python3 main/mixed.py code.mixed\n</code></pre>"},{"location":"#mixed_1","title":"Mixed \u8bed\u6cd5","text":""},{"location":"#_3","title":"\u5173\u952e\u5b57","text":"<pre><code>print scan function \n</code></pre>"},{"location":"#_4","title":"\u8bed\u6cd5","text":""},{"location":"#_5","title":"\u6ce8\u91ca","text":"<p><code>Mixed</code>\u7684\u6ce8\u91ca\u4e0e<code>C</code> <code>C++</code> <code>Java</code> <code>JavaScript</code>\u7684\u6ce8\u91ca\u5927\u540c\u5c0f\u5f02\u3002</p>"},{"location":"#_6","title":"\u7528\u6cd5","text":"<pre><code>// \u8fd9\u662f\u4e00\u6bb5\u6ce8\u91ca\n</code></pre>"},{"location":"#_7","title":"\u793a\u4f8b","text":"<p><pre><code>function main() { // \u5b9a\u4e49\u51fd\u6570\n    print(\"Hello World!\") // \u6253\u5370\"Hello World!\"\n}\n\nmain() //\u8c03\u7528\u51fd\u6570\n</code></pre> <pre><code>/* class new main() {\n    function INIT(cls) {\n        cls.main = \"\u8fd9\u662f\u591a\u884c\u6ce8\u91ca\"\n    }\n} */\n</code></pre></p>"},{"location":"#_8","title":"\u6570\u636e\u7c7b\u578b","text":""},{"location":"#_9","title":"\u8d4b\u503c\u65b9\u5f0f","text":"<pre><code>&lt;name&gt; = &lt;integer | string&gt;()\n</code></pre>"},{"location":"#_10","title":"\u65b9\u6cd5","text":""},{"location":"#integer","title":"<code>integer</code>","text":"<pre><code>i.tobyte() // \u4e0ePython int.to_bytes()\u7c7b\u4f3c\ni.type() // \u8fd4\u56de\u7c7b\u4f3c\"class type: &lt;\u7c7b\u578b&gt; at &lt;\u5185\u5b58\u5730\u5740&gt;\"\n</code></pre>"},{"location":"#string","title":"<code>string</code>","text":"<pre><code>s.type() // \u8fd4\u56de\u7c7b\u4f3c\"class type: &lt;\u7c7b\u578b&gt; at &lt;\u5185\u5b58\u5730\u5740&gt;\"\n</code></pre>"},{"location":"#_11","title":"\u51fd\u6570","text":""},{"location":"#_12","title":"\u7528\u6cd5","text":"<pre><code>function &lt;function-name&gt;([parameter1, parameter2, ...]) {\n    &lt;command&gt;\n    ...\n}\n\n&lt;function-name&gt;([parameter1, parameter2, ...])\n</code></pre>"},{"location":"#_13","title":"\u793a\u4f8b","text":"<pre><code>function main(void) {\n    print(void)\n}\n\nmain(\"Hello World\")\n</code></pre>"},{"location":"#_14","title":"\u7c7b","text":""},{"location":"#_15","title":"\u7528\u6cd5","text":"<pre><code>class new &lt;class-name&gt;([parent1, parent2, ...]) {\n    function INIT(cls) {\n        &lt;command&gt;\n    }\n\n    function func1(cls) {\n        &lt;command&gt;\n    }\n\n    function fun2(cls) {\n        &lt;command&gt;\n    }\n\n    ...\n}\n</code></pre>"},{"location":"#_16","title":"\u793a\u4f8b","text":"<pre><code>class new MyClass() {\n    function INIT(cls) {\n        cls.name = \"MyClass\"\n    }\n\n    function get_name(cls) {\n        print(cls.name)\n    }\n}\n\nmain = MyClass()\nmain.get_name() // -&gt; MyClass\n</code></pre>"}]}
+{
+    "config": {
+        "lang": [
+            "en"
+        ],
+        "separator": "[\\s\\u200b\\-_,:!=\\[\\]()\"`/]+|\\.(?!\\d)|&[lg]t;|(?!\\b)(?=[A-Z][a-z])",
+        "pipeline": [
+            "stemmer"
+        ]
+    },
+    "docs": [
+        {
+            "location": "",
+            "title": "User Guide - \u7528\u6237\u624b\u518c",
+            "text": ""
+        },
+        {
+            "location": "#_1",
+            "title": "\u7528\u6237\u624b\u518c",
+            "text": ""
+        },
+        {
+            "location": "#mixed",
+            "title": "\u5982\u4f55\u4f7f\u7528 <code>Mixed</code> \uff1f",
+            "text": "<p>\u4f7f\u7528\u5982\u4e0b\u683c\u5f0f\u7684<code>cmd</code> <code>PowerShell</code>\u547d\u4ee4\uff1a</p> <p><pre><code>&lt;python | python3&gt; mixed.py &lt;&lt;filename&gt;.mixed&gt;\n</code></pre> \u4f60\u5c06\u5728<code>/dist/</code>\u4e0b\u770b\u5230\u4e00\u4e2a<code>&lt;filename&gt;.exe</code>\u7684\u53ef\u6267\u884c\u6587\u4ef6\u3002</p> <p>\u5982\u679c\u60f3\u770b\u5230\u6267\u884c\u6548\u679c\uff0c\u8bf7\u4f7f\u7528<code>cmd</code>\u6216<code>PowerShell</code>\u6253\u5f00\u6b64\u6587\u4ef6\u3002</p>"
+        },
+        {
+            "location": "#_2",
+            "title": "\u793a\u4f8b",
+            "text": "<pre><code>python3 main/mixed.py code.mixed\n</code></pre>"
+        },
+        {
+            "location": "#mixed_1",
+            "title": "Mixed \u8bed\u6cd5",
+            "text": ""
+        },
+        {
+            "location": "#_3",
+            "title": "\u5173\u952e\u5b57",
+            "text": "<pre><code>print scan function class new INIT cls return\n</code></pre>"
+        },
+        {
+            "location": "#_4",
+            "title": "\u8bed\u6cd5",
+            "text": ""
+        },
+        {
+            "location": "#_5",
+            "title": "\u6ce8\u91ca",
+            "text": "<p><code>Mixed</code>\u7684\u6ce8\u91ca\u4e0e<code>C</code> <code>C++</code> <code>Java</code> <code>JavaScript</code>\u7684\u6ce8\u91ca\u5927\u540c\u5c0f\u5f02\u3002</p>"
+        },
+        {
+            "location": "#_6",
+            "title": "\u7528\u6cd5",
+            "text": "<pre><code>// \u8fd9\u662f\u4e00\u6bb5\u6ce8\u91ca\n</code></pre>"
+        },
+        {
+            "location": "#_7",
+            "title": "\u793a\u4f8b",
+            "text": "<p><pre><code>function main() { // \u5b9a\u4e49\u51fd\u6570\n    print(\"Hello World!\") // \u6253\u5370\"Hello World!\"\n}\n\nmain() //\u8c03\u7528\u51fd\u6570\n</code></pre> <pre><code>/* class new main() {\n    function INIT(cls) {\n        cls.main = \"\u8fd9\u662f\u591a\u884c\u6ce8\u91ca\"\n    }\n} */\n</code></pre></p>"
+        },
+        {
+            "location": "#_8",
+            "title": "\u6570\u636e\u7c7b\u578b",
+            "text": ""
+        },
+        {
+            "location": "#_9",
+            "title": "\u8d4b\u503c\u65b9\u5f0f",
+            "text": "<pre><code>&lt;name&gt; = &lt;integer | string&gt;()\n</code></pre>"
+        },
+        {
+            "location": "#_10",
+            "title": "\u65b9\u6cd5",
+            "text": ""
+        },
+        {
+            "location": "#integer",
+            "title": "<code>integer</code>",
+            "text": "<pre><code>i.tobyte() // \u4e0ePython int.to_bytes()\u7c7b\u4f3c\ni.type() // \u8fd4\u56de\u7c7b\u4f3c\"class type: &lt;\u7c7b\u578b&gt; at &lt;\u5185\u5b58\u5730\u5740&gt;\"\n</code></pre>"
+        },
+        {
+            "location": "#string",
+            "title": "<code>string</code>",
+            "text": "<pre><code>s.type() // \u8fd4\u56de\u7c7b\u4f3c\"class type: &lt;\u7c7b\u578b&gt; at &lt;\u5185\u5b58\u5730\u5740&gt;\"\n</code></pre>"
+        },
+        {
+            "location": "#_11",
+            "title": "\u51fd\u6570",
+            "text": ""
+        },
+        {
+            "location": "#_12",
+            "title": "\u7528\u6cd5",
+            "text": "<pre><code>function &lt;function-name&gt;([parameter1, parameter2, ...]) {\n    &lt;command&gt;\n    ...\n}\n\n&lt;function-name&gt;([parameter1, parameter2, ...])\n</code></pre>"
+        },
+        {
+            "location": "#_13",
+            "title": "\u793a\u4f8b",
+            "text": "<pre><code>function main(void) {\n    print(void)\n}\n\nmain(\"Hello World\")\n</code></pre>"
+        },
+        {
+            "location": "#_14",
+            "title": "\u7c7b",
+            "text": ""
+        },
+        {
+            "location": "#_15",
+            "title": "\u7528\u6cd5",
+            "text": "<pre><code>class new &lt;class-name&gt;([parent1, parent2, ...]) {\n    function INIT(cls) {\n        &lt;command&gt;\n    }\n\n    function func1(cls) {\n        &lt;command&gt;\n    }\n\n    function func2(cls) {\n        &lt;command&gt;\n    }\n\n    ...\n}\n</code></pre>"
+        },
+        {
+            "location": "#_16",
+            "title": "\u793a\u4f8b",
+            "text": "<pre><code>class new MyClass() {\n    function INIT(cls) {\n        cls.name = \"MyClass\"\n    }\n\n    function get_name(cls) {\n        print(cls.name)\n    }\n}\n\nmain = MyClass()\nmain.get_name() // -&gt; MyClass\n</code></pre>"
+        }
+    ]
+}
