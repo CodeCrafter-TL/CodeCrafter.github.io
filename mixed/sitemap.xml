@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://CodeCrafter-TL.github.io/mixed/</loc>
-         <lastmod>2024-02-24</lastmod>
+         <loc>https://codecrafter-studio.github.io/mixed-lang/cn/index.html</loc>
+         <lastmod>2024-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://codecrafter-studio.github.io/mixed-lang/cn/pmr.html</loc>
+         <lastmod>2024-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://codecrafter-studio.github.io/mixed-lang/cn/guide/1.html</loc>
+         <lastmod>2024-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://codecrafter-studio.github.io/mixed-lang/en/index.html</loc>
+         <lastmod>2024-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://codecrafter-studio.github.io/mixed-lang/en/pmr.html</loc>
+         <lastmod>2024-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://codecrafter-studio.github.io/mixed-lang/en/guide/1.html</loc>
+         <lastmod>2024-03-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
