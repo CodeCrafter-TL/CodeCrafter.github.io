@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://codecrafter-studio.github.io/mixed-lang/cn/guide/2.html</loc>
+         <lastmod>2024-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://codecrafter-studio.github.io/mixed-lang/en/index.html</loc>
          <lastmod>2024-03-02</lastmod>
          <changefreq>daily</changefreq>
@@ -27,6 +32,11 @@
     </url>
     <url>
          <loc>https://codecrafter-studio.github.io/mixed-lang/en/guide/1.html</loc>
+         <lastmod>2024-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://codecrafter-studio.github.io/mixed-lang/en/guide/2.html</loc>
          <lastmod>2024-03-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
