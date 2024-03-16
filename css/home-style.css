@@ -19,7 +19,8 @@
 
 .backdrop-home {
   backdrop-filter: blur(30px);
-  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0);
   width: 100%;
   position: fixed;
   top: 0;
@@ -28,7 +29,7 @@
   height: 7%;
   margin: 0;
   align-items: center;
-  box-shadow: 1px 1px 1px #707070, 0 0 0.5em #707070, 0 0 0.1em #707070;
+  box-shadow: 1px 1px 1px #000, 0 0 0.5em #000, 0 0 0.1em #000;
 }
 
 .backdrop {
