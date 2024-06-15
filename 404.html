@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="./assets/light/style.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="./assets/dark/style.css">
+    <title>CodeCrafter - 404</title>
+</head>
+
+<body id="nobg-body">
+    <header id="blur">
+        <div id="title">
+            <p id="title-content" onclick="BackTop()">CodeCrafter</p>
+            <!-- 每日诗词 <p id="jinrishici-sentence" onclick="BackTop()"></p> -->
+        </div>
+    </header>
+
+    <main>
+        <section id="info">
+            <p id="info-title">404 Not Found</p>
+            <p id="info" onclick="window.location = './index.html';">没有找到你需要的链接<br>点击跳转到主页</p>
+        </section>
+    </main>
+
+    <script>
+        function BackTop() {
+            document.body.scrollTop = 0; // Safari (Webkit kernel)
+            document.documentElement.scrollTop = 0; // Other browser
+        }
+    </script>
+    <!-- 每日诗词API <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8" ></script> -->
+</body>
+
+</html>

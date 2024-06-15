@@ -2,23 +2,45 @@
 <html>
 
 <head>
-    <title>CodeCrafter</title>
-    <link rel="icon" href="./images/logo.png" sizes="16x16" />
-    <link rel="stylesheet" href="./css/home-style.css" />
-    <script src="./js/js.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="./assets/light/style.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="./assets/dark/style.css">
+    <title>CodeCrafter - 首页</title>
 </head>
 
-<body class="start-body">
-    <div class="backdrop-home">
-        <div class="backdrop-content">
-            <h3 id="title">CodeCrafter</h3>
+<body id="bg-body">
+    <header id="blur">
+        <div id="title">
+            <p id="title-content" onclick="BackTop()">CodeCrafter</p>
+            <!-- 每日诗词 <p id="jinrishici-sentence" onclick="BackTop()"></p> -->
         </div>
-    </div>
-    <div class="home">
-        <h3>CodeCrafter Studio</h3>
-        <h4>由10名学生共同组成的小型工作室</p>
-            <a href="./home/index.html">主页</a>
-    </div>
+        <div id="supers">
+            <p id="title-content" onclick="window.location = './projects/index.html'">项目</p>
+            <p id="title-content" onclick="window.location = './people/index.html'">贡献者/成员</p>
+            <p id="title-content" onclick="window.location = './join/index.html'">加入我们</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <p id="info-title">CodeCrafter Studio</p>
+            <p id="info">欢迎您的光临</p>
+            <p id="info">这里是由18名学生组成的工作室</p>
+            <div id="btn" onclick="window.location = './projects/index.html'">项目</div>
+            <div id="btn" style="margin-left: 10px; margin-right: 10px;" onclick="window.location = './people/index.html'">贡献者/成员</div>
+            <div id="btn" onclick="window.location = './join/index.html'">加入我们</div>
+        </section>
+        <p id="copyright">Copyright ©2023~2024 CodeCrafter Studio.</p>
+    </main>
+
+    <script>
+        function BackTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- 每日诗词API <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8" ></script> -->
 </body>
 
 </html>

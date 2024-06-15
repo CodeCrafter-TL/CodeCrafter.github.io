@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="../assets/light/style.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="../assets/dark/style.css">
+    <title>CodeCrafter - 项目</title>
+</head>
+
+<body id="bg-body">
+    <header id="blur">
+        <div id="title">
+            <p id="title-content" onclick="BackTop()">CodeCrafter</p>
+            <!-- 每日诗词 <p id="jinrishici-sentence" onclick="BackTop()"></p> -->
+        </div>
+        <div id="supers">
+            <p id="title-content" onclick="window.location = '../index.html'">首页</p>
+            <p id="title-content" onclick="window.location = '../projects/index.html'">项目</p>
+            <p id="title-content" onclick="window.location = '../people/index.html'">贡献者/成员</p>
+            <p id="title-content" onclick="window.location = '../join/index.html'">加入我们</p>
+        </div>
+    </header>
+
+    <main style="flex-direction: column; margin-top: 68px;">
+        <section style="margin-top: 20px;">
+            <p id="info-title">html-macOS ( Webintosh )</p>
+            <p id="info">一个使用 html 超文本标记语言开发的复刻macOS界面的页面</p>
+            <div>
+                <a href="https://github.com/codecrafter-tl/x-html" id="btn" style="margin-right: 10px;">项目仓库</a>
+                <a href="https://codecrafter-tl.github.io/x-html" id="btn">项目网页</a>
+            </div>
+        </section>
+        <section style="margin-top: 20px;">
+            <p id="info-title">tkinter-macOS ( Tkintosh )</p>
+            <p id="info">一个tkinter的macOS主题</p>
+            <div>
+                <a href="https://github.com/codecrafter-tl/tkinter-macos" id="btn">项目仓库</a>
+            </div>
+        </section>
+        <section style="margin-top: 20px;">
+            <p id="info-title">Python Visual Programmer</p>
+            <p id="info">基于 Python 语言中的 tkinter GUI 工具的可视化编程软件<br>底层基于 tkintertools</p>
+            <div>
+                <a href="https://github.com/pyvp-team/visual-programmer" id="btn">项目仓库</a>
+            </div>
+        </section>
+        <section style="margin-top: 20px;">
+            <p id="info-title">CodeCrafter Wallpaper</p>
+            <p id="info">一款跨平台的切换壁纸的软件</p>
+        </section>
+        <section style="margin-top: 20px;">
+            <p id="info-title">Mixed Language</p>
+            <p id="info">是一种新的编程语言  它包含了当今各种编程语言的特点  MIXED Lang允许您动态制作程序</p>
+            <div>
+                <a href="https://github.com/codecrafter-studio/mixed-lang" id="btn">项目仓库</a>
+            </div>
+        </section>
+        <section style="margin-top: 20px;">
+            <p id="info-title">OS ( PyvolveOS )</p>
+            <p id="info">暂停开发中  预计暑假继续进行开发</p>
+        </section>
+    </main>
+
+    <script>
+        function BackTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- 每日诗词API <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8" ></script> -->
+</body>
+
+</html>

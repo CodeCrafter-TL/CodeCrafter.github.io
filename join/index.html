@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="../assets/light/style.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="../assets/dark/style.css">
+    <title>CodeCrafter - 加入我们</title>
+</head>
+
+<body id="bg-body">
+    <header id="blur">
+        <div id="title">
+            <p id="title-content" onclick="BackTop()">CodeCrafter</p>
+            <!-- 每日诗词 <p id="jinrishici-sentence" onclick="BackTop()"></p> -->
+        </div>
+        <div id="supers">
+            <p id="title-content" onclick="window.location = '../index.html'">首页</p>
+            <p id="title-content" onclick="window.location = '../projects/index.html'">项目</p>
+            <p id="title-content" onclick="window.location = '../people/index.html'">贡献者/成员</p>
+            <p id="title-content" onclick="window.location = '../join/index.html'">加入我们</p>
+        </div>
+    </header>
+
+    <main style="flex-direction: column;">
+        <section style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <div>
+                <p id="join-us-text" style="font-size: 34px;">加入我们</p>
+                <p id="join-us-text" style="font-size: 18px;">CodeCrafter Studio 欢迎大家加入交流</p>
+                <p id="join-us-text" style="font-size: 25px; margin-top: 20px;">以下条件满足其一即可</p>
+                <p id="join-us-text" style="font-size: 22px;">1 有HTML CSS JS基础<br>2 有任何一种编程语言基础 最好常见<br>3
+                    有GUI开发基础（<code>tkinter PyQt5 swing</code>...）<br>4 （最好）有汇编、C语言开发基础</p>
+                <p id="join-us-text" style="font-size: 25px; margin-top: 20px;">若满足以上任意一条  请发送邮件至1825456084@qq.com<br>或直接加QQ 1825456084.</p>
+                <div id="btn" onclick="window.location = 'mailto:1825456084@qq.com'">点我发送邮件</div>
+                <div id="btn" onclick="copyToClipboard('1825456084@qq.com');" style="margin-left: 10px; margin-right: 10px;">复制邮箱</div>
+                <div id="btn" onclick="copyToClipboard('1825456084');">复制QQ号</div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function BackTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function copyToClipboard(text) {
+            const tempInput = document.createElement('input');
+            tempInput.style.position = 'absolute';
+            tempInput.style.left = '-9999px';
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            // alert('复制成功: ' + text);
+        }
+    </script>
+    <!-- 每日诗词API <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8" ></script> -->
+</body>
+
+</html>
