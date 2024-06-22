@@ -7,102 +7,108 @@
     <link rel="stylesheet" media="(prefers-color-scheme: light)" href="../assets/light/style.css">
     <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="../assets/dark/style.css">
     <title>CodeCrafter - 贡献者/成员</title>
+    <style>
+        p {
+            text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
 </head>
 
 <body id="bg-body">
     <header id="blur">
         <div id="title">
-            <p id="title-content" onclick="BackTop()">CodeCrafter</p>
+            <p id="ntitle-content" onclick="BackTop()">CodeCrafter</p>
             <!-- 每日诗词 <p id="jinrishici-sentence" onclick="BackTop()"></p> -->
         </div>
         <div id="supers">
-            <p id="title-content" onclick="window.location = '../index.html'">首页</p>
-            <p id="title-content" onclick="window.location = '../projects/index.html'">项目</p>
+            <p id="ntitle-content" onclick="window.location = '../index.html'">首页</p>
+            <p id="ntitle-content" onclick="window.location = '../projects/index.html'">项目</p>
             <p id="title-content" onclick="window.location = '../people/index.html'">贡献者/成员</p>
             <p id="title-content" onclick="window.location = '../join/index.html'">加入我们</p>
         </div>
     </header>
 
-    <main style="flex-direction: column;">
-        <p id="info-title" style="margin-bottom: 20px;">成员</p>
-        <div
-            style="display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 112px));">
-            <div id="people">
-                <img src="../assets/images/tl.jpg" />
-                <h3 id="info" style="color: rgba(255, 255, 70, 1)">CodeCrafter-TL</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/rgzz.png" />
-                <h3 id="info" style="color: rgba(255, 255, 70, 1)">真_人工智障</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/gaoxuan.jpg" />
-                <h3 id="info" style="color: rgba(255, 255, 70, 1)">Gaoxuan</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/tiking.jpg" />
-                <h3 id="info"
-                    style="color: rgba(80, 60, 185, 1);text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);">
-                    Tiking</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/acc.jpg" />
-                <h3 id="info"
-                    style="color: rgba(80, 60, 185, 1);text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);">
-                    ACC</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/ntf.jpg" />
-                <h3 id="info" style="color: rgba(255, 255, 70, 1)">NTF404</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/simonger.jpg" />
-                <h3 id="info" style="color: rgba(255, 255, 70, 1)">事创造键啊</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/python-star.jpg" />
-                <h3 id="info" style="color: rgba(255, 255, 70, 1)">Python之星-刘皓月</h3>
-            </div>
+
+    <div class="paddingtop" style="text-align: center;">
+        <h1 id="info-title">成员</h1>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/tl.jpg" alt="">
+            <p style="color: rgba(255, 255, 70, 1)">CodeCrafter-TL</p>
         </div>
-        <div style="display: flex; flex-direction: row;">
-            <div id="people">
-                <img src="../assets/images/zcz.jpg" />
-                <h3 id="info">ZCZ</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/maxkey.jpg" />
-                <h3 id="info">Maxkey52</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/kde.jpg" />
-                <h3 id="info">ChenXiaoThi</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/h.jpg" />
-                <h3 id="info">hcymc</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/easytong.jpg" />
-                <h3 id="info">EasyTong</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/creepe.jpg" />
-                <h3 id="info">CreepeBucket</h3>
-            </div>
-            <div id="people">
-                <img src="../assets/images/cheems.jpg" />
-                <h3 id="info">Cheems</h3>
-            </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/rgzz.png" alt="">
+            <p style="color: rgba(255, 255, 70, 1)">真_人工智障</p>
         </div>
-        <p id="info-title" style="margin-bottom: 20px; margin-top: 100px;">贡献者</p>
-        <div style="display: flex; flex-direction: row;">
-            <div id="people">
-                <img src="../assets/images/xiaokang.jpg" />
-                <h3 id="info"
-                    style="color: rgba(163, 255, 70, 1); text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);">
-                    我就是小康</h3>
-            </div>
-    </main>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/ntf.jpg" alt="">
+            <p style="color: rgba(255, 255, 70, 1)">NTF404</p>
+        </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/acc.jpg" alt="">
+            <p
+                style="color: rgba(80, 60, 185, 1);text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);">
+                ACC</p>
+        </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/tiking.jpg" alt="">
+            <p
+                style="color: rgba(80, 60, 185, 1);text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);">
+                Tiking</p>
+        </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/ntf.jpg" alt="">
+            <p style="color: rgba(255, 255, 70, 1)">aaaGaoxuan</p>
+        </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/simonger.jpg" alt="">
+            <p style="color: rgba(255, 255, 70, 1)">事创造键啊</p>
+        </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/python-star.jpg" alt="">
+            <p style="color: rgba(255, 255, 70, 1)">Python之星-刘皓月</p>
+        </div>
+        <br>
+        <div style="display:inline-block;" style="margin-left:50px;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/maxkey.jpg" alt="">
+            <p>maxkey52</p>
+        </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/kde.jpg" alt="">
+            <p>ChenXiaoThi</p>
+        </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/easytong.jpg" alt="">
+            <p>易通EasyTong</p>
+        </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/zcz.jpg" alt="">
+            <p>IMZCZ</p>
+        </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/h.jpg" alt="">
+            <p>hcy_mc</p>
+        </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/creepe.jpg" alt="">
+            <p>CreepeBucket</p>
+        </div>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/cheems.jpg" alt="">
+            <p>Cheems</p>
+        </div>
+        <h1 id="info-title">贡献者</h1>
+        <div style="display:inline-block;" class="textalign" id="member-frame">
+            <img class="image" src="../assets/images/xiaokang.jpg" alt="">
+            <p
+                style="color: rgba(163, 255, 70, 1); text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);">
+                我就是小康</p>
+        </div>
+    </div>
 
     <script>
         function BackTop() {
